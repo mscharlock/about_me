@@ -5,7 +5,7 @@ console.log('user: ',user);
 
 alert('Nice to meet you, ' + user +'. To get to know me better, let\'s play a game. I\'ll ask you five questions about me.');
 
-var michelleBorn = prompt('Was I born in the USA? Answer with Y/N, please.');
+var michelleBorn = prompt('Was I born in the USA? Answer with y/n, please.').toLowerCase();
 console.log('michelleBorn: ',michelleBorn);
 
 if (michelleBorn === 'yes' || michelleBorn === 'y') {
@@ -17,31 +17,29 @@ if (michelleBorn === 'yes' || michelleBorn === 'y') {
 }
 }
 
-var michelleCollege = prompt('Did Michelle go to Montreal, to McGill University, for her undergraduate degree?');
+var michelleCollege = prompt('Did Michelle go to Montreal, to McGill University, for her undergraduate degree?').toLowerCase();
 console.log('michelleCollege: ', michelleCollege);
 
-if (michelleCollege === 'McGill' || michelleCollege === 'McGill University') {
-  console.log('Right! She studied opera over in Montreal!');
-}else if (michelleCollege === 'yes' || michelleCollege === 'Y') {
+if (michelleCollege === 'yes' || michelleCollege === 'y') {
   console.log('Oui oui!')
 }
 } else {
-  console.log('I didn\'t catch that! But the correct answer was yes!');
+  console.log('I didn\'t quite catch that! But the correct answer was yes!');
 }
 }
 
-var michelleLikesCoding = prompt('Do you think Michelle enjoys coding?');
+var michelleLikesCoding = prompt('Do you think Michelle enjoys coding?').toLowerCase();
 console.log('michelleLikesCoding: ', michelleLikesCoding);
 
-if (michelleLikesCoding === 'Y' || michelleLikesCoding === 'yes') {
-  console.log('Right!!')
+if (michelleLikesCoding === 'y' || michelleLikesCoding === 'yes') {
+  console.log('Right!!');
 }
 else {
   console.log('That was an easy one! Of course she likes coding!');
 }
 }
 
-var michelleHasPets = prompt ('Do you think Michelle has any pets?');
+var michelleHasPets = prompt ('Do you think Michelle has any pets?').toLowerCase();
 console.log('michelleHasPets: ', michelleHasPets);
 
 if (michelleHasPets === 'y' || michelleHasPets === 'yes') {
@@ -52,7 +50,6 @@ michelleHasPets === 'cats') {
   console.log('Yes! She does have a cat.');
 } else {
   console.log('Wrong! She has a cat!');
-}
 }
 
 var michelleFictionalCharacterBff = prompt('Time for one last question! If Michelle could be best friends with any fictional character, who would she choose to befriend?');
