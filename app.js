@@ -41,7 +41,21 @@ else {
 }
 }
 
-var michelleFictionalCharacterBff = prompt('Time to have a little more fun with these questions! If Michelle could be best friends with any fictional character, who would she choose to befriend?');
+var michelleHasPets = prompt ('Do you think Michelle has any pets?');
+console.log('michelleHasPets: ', michelleHasPets);
+
+if (michelleHasPets === 'y' || michelleHasPets === 'yes') {
+  console.log('Yes! She has a very fuzzy cat named Toby');
+}
+else if (michelleHasPets === 'cat' ||
+michelleHasPets === 'cats') {
+  console.log('Yes! She does have a cat.');
+} else {
+  console.log('Wrong! She has a cat!');
+}
+}
+
+var michelleFictionalCharacterBff = prompt('Time for one last question! If Michelle could be best friends with any fictional character, who would she choose to befriend?');
 console.log('michelleFictionalCharacterBff: ', michelleFictionalCharacterBff);
 
 if (michelleFictionalCharacterBff === "Sherlock Holmes" || michelleFictionalCharacterBff === "Sherlock") {
