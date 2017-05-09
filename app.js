@@ -52,6 +52,17 @@ michelleHasPets === 'cats') {
   console.log('Wrong! She has a cat!');
 }
 
+var michelleImmortality = prompt('If Michelle could choose to be immortal, would she do it?').toUpperCase();
+console.log('michelleImmortality: ' , michelleImmortality);
+
+if (michelleImmortality === 'YES' || michelleImmortality === 'Y') {
+  console.log('I\'d rather not be forever yearning for the past, so no, I wouldn\'t want to live forever.');
+} else if (michelleImmortality === 'NO' || michelleImmortality === 'N') {
+  console.log('Right. Just like how that song "that goes on and on my friends" gets annoying in about five seconds, living forever sounds like it could get tiresome after a while.');
+} else {
+  console.log('You didn\'t answer yes or no! Pffffttttt!');
+}
+
 var michelleFictionalCharacterBff = prompt('Time for one last question! If Michelle could be best friends with any fictional character, who would she choose to befriend?');
 console.log('michelleFictionalCharacterBff: ', michelleFictionalCharacterBff);
 
