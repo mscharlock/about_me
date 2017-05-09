@@ -15,4 +15,14 @@ if (michelleBorn === 'yes' || michelleBorn === 'y') {
 } else {
   console.log('I didn\'t understand your answer but I\'ll just tell you: I was born in Germany!');
 }
-};
+}
+
+var michelleCollege = prompt('Where do you think Michelle went to school for her undergraduate degree?');
+console.log('michelleCollege: ', michelleCollege);
+
+if (michelleCollege === 'McGill' || michelleCollege === 'McGill University') {
+  console.log('Right! She studied opera over in Montreal!');
+} else {
+  console.log('Good try, but the answer was McGill University');
+}
+}
