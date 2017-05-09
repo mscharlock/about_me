@@ -10,7 +10,7 @@ console.log('michelleBorn: ',michelleBorn);
 
 if (michelleBorn === 'yes' || michelleBorn === 'y') {
   console.log('Good guess, but no! I was actually born in Germany!');
-} elseif (michelleBorn === 'no' || michelleBorn === 'n') {
+} else if (michelleBorn === 'no' || michelleBorn === 'n') {
   console.log('Correct! I was not born in the US. I was actually born in Heidelberg, Germany.');
 } else {
   console.log('I didn\'t understand your answer but I\'ll just tell you: I was born in Germany!');
