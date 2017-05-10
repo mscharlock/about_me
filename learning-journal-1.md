@@ -32,4 +32,4 @@ Also, it was interesting to see what the 401 students this afternoon were up to 
 Right now I'm feeling very Isaac Asimov about what the 401 people are building -
 >"Any sufficiently advanced technology is indistinguishable from magic"
 
-kinda thing. Does this mean I secretly want to be a wizard? *(Perhaps).* 
+kinda thing. Does this mean I secretly want to be a wizard? *(Perhaps).*
