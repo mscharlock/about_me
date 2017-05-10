@@ -1,4 +1,11 @@
-p {
+header {
   font-family: 'Sacramento', cursive;
-  font-size: 10px;
+  font-size: 100px;
+  color: #000;
+  background-color: #ffb3ba;
+}
+
+p {
+  font-size: 20px;
+  font-family: 'Averia Serif Libre', cursive;
 }
