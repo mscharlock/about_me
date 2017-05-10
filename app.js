@@ -62,19 +62,19 @@ if (michelleImmortality === 'YES' || michelleImmortality === 'Y') {
 var michelleFictionalCharacterBff = prompt('Time for one last question! If Michelle could be best friends with any fictional character, who would she choose to befriend?');
 console.log('michelleFictionalCharacterBff: ', michelleFictionalCharacterBff);
 
-if (michelleFictionalCharacterBff === "Sherlock Holmes" || michelleFictionalCharacterBff === "Sherlock") {
-  alert('Bingo, super sleuth! The game is afoot!')
+if (michelleFictionalCharacterBff === 'Sherlock Holmes' || michelleFictionalCharacterBff === 'Sherlock') {
+  alert('Bingo, super sleuth! The game is afoot!');
 }
-else if (michelleFictionalCharacterBff === "Benedict Cumberbatch") {
-  alert("Eh, close enough! We'll mark that as right!")
+else if (michelleFictionalCharacterBff === 'Benedict Cumberbatch') {
+  alert('Eh, close enough! We\'ll mark that as right!');
 }
 else if (michelleFictionalCharacterBff === 'Mr. Darcy') {
-  alert('Uhhhh no. He\'s way too whiny!')
+  alert('Uhhhh no. He\'s way too whiny!');
 }
 else if (michelleFictionalCharacterBff === 'Buffy' || michelleFictionalCharacterBff === 'Batman' || michelleFictionalCharacterBff === 'Superman') {
-  alert('Those are pretty popular characters, but nope! The answer was Sherlock Holmes!')
+  alert('Those are pretty popular characters, but nope! The answer was Sherlock Holmes!');
 } else {
-  alert('Good guess! But the answer was Sherlock Holmes. Sherlock...it\'s pretty close to Scharlock, right?')
+  alert('Good guess! But the answer was Sherlock Holmes. Sherlock...it\'s pretty close to Scharlock, right?');
 }
 
 
