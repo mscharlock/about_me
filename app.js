@@ -77,6 +77,41 @@ else if (michelleFictionalCharacterBff === 'Buffy' || michelleFictionalCharacter
   alert('Good guess! But the answer was Sherlock Holmes. Sherlock...it\'s pretty close to Scharlock, right?')
 }
 
+//Guess a number
+var myNumber;
+var counter = 0;
+
+while (myNumber !== 12) {
+  myNumber = parseInt(prompt('What is my favorite number? Take a guess!'));
+
+  if (myNumber > 50){
+    alert('Too high!');
+    counter++;
+  } else if (myNumber < 3) {
+    alert('Too low!');
+    counter++;
+  } else if (myNumber < 8 && myNumber > 20) {
+    alert ('You\'re getting closer...');
+    counter++;
+  } else if (myNumber === 12) {
+    alert('Yay, you win!')
+  }
+
+  if (counter === 4) {
+    alert('Sorry, you ran out of tries - my favorite number is 12!')
+    break;
+  }
+};
+
+console.log('counter: ', counter);
+
+
+
+
+
+
+
+
 
 //Alternative question
 // var michelleVacation = prompt('Ok, one last question. Where did Michelle go on vacation last?');
