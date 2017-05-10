@@ -3,9 +3,34 @@ header {
   font-size: 100px;
   color: #000;
   background-color: #ffb3ba;
+  margin: 0px;
+  padding: none;
+}
+
+h1 {
+  font-family: 'Sacramento', cursive;
+  font-size: 50px;
+  font-weight: 200;
+  background-color: #ffdfba;
+  margin: 0px;
+}
+
+h2 {
+  font-family: 'Sacramento', cursive;
+  font-size: 50px;
+  font-weight: 200;
 }
 
 p {
   font-size: 20px;
   font-family: 'Averia Serif Libre', cursive;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+* {
+  background-color: #bae1ff;
 }
