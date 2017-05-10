@@ -1,7 +1,9 @@
 header {
   font-family: 'Sacramento', cursive;
   font-size: 100px;
-  color: #000;
+  text-shadow: 2px 2px #111;
+  text-align: center;
+  color: #FFF;
   background-color: #ffb3ba;
   margin: 0px;
   padding: none;
@@ -11,14 +13,23 @@ h1 {
   font-family: 'Sacramento', cursive;
   font-size: 50px;
   font-weight: 200;
+  color: #FFF;
   background-color: #ffdfba;
   margin: 0px;
+  text-align: center;
 }
 
 h2 {
   font-family: 'Sacramento', cursive;
   font-size: 50px;
   font-weight: 200;
+  color: #FFF;
+  background-color: #baffc9;
+  text-align: center;
+}
+
+.blue {
+  background color: #FFF;
 }
 
 p {
@@ -31,6 +42,6 @@ body {
   margin: 0px;
 }
 
-* {
+footer {
   background-color: #bae1ff;
 }
