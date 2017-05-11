@@ -130,3 +130,28 @@ while (myNumber !== 12) {
 }
 
 console.log('counter: ', counter);
+
+
+//guessing that stupid fictional chara thing again
+var flag;
+//console log
+var michellesArray = ['Cat', 'Dog']
+//console log
+var guessCount = 0;
+//console log
+var yourGuess = prompt('What pet');
+//console log
+
+while (var guessCount <= 6) {
+  while (yourGuess != michellesArray[i]) {
+    alert('NO')
+    guessCount++;
+    console.log(guessCount)
+
+  if (yourGuess === michellesArray[i]){
+    alert('YAY')
+    guessCount++;
+    console.log(guessCount)
+  }
+  }
+}
