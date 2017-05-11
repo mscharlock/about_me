@@ -59,22 +59,48 @@ if (michelleImmortality === 'YES' || michelleImmortality === 'Y') {
   alert('You didn\'t answer yes or no! Pffffttttt!');
 }
 
-var michelleFictionalCharacterBff = prompt('Time for one last question! If Michelle could be best friends with any fictional character, who would she choose to befriend?');
+// var michelleFictionalCharacterBff = prompt('Time for one last question! If Michelle could be best friends with any fictional character, who would she choose to befriend?');
+// console.log('michelleFictionalCharacterBff: ', michelleFictionalCharacterBff);
+//
+// if (michelleFictionalCharacterBff === "Sherlock Holmes" || michelleFictionalCharacterBff === "Sherlock") {
+//   alert('Bingo, super sleuth! The game is afoot!')
+// }
+// else if (michelleFictionalCharacterBff === "Benedict Cumberbatch") {
+//   alert("Eh, close enough! We'll mark that as right!")
+// }
+// else if (michelleFictionalCharacterBff === 'Mr. Darcy') {
+//   alert('Uhhhh no. He\'s way too whiny!')
+// }
+// else if (michelleFictionalCharacterBff === 'Buffy' || michelleFictionalCharacterBff === 'Batman' || michelleFictionalCharacterBff === 'Superman') {
+//   alert('Those are pretty popular characters, but nope! The answer was Sherlock Holmes!')
+// } else {
+//   alert('Good guess! But the answer was Sherlock Holmes. Sherlock...it\'s pretty close to Scharlock, right?')
+// }
+
+//Six tries to guess one of multiple answers
+var ficCharas = ['Sherlock Holmes', 'Catwoman', 'Fluttershy', 'Xena'];
+var flag;
+var michelleFictionalCharacterBff = prompt('What fictional character would Michelle hang out with?');
 console.log('michelleFictionalCharacterBff: ', michelleFictionalCharacterBff);
 
-if (michelleFictionalCharacterBff === "Sherlock Holmes" || michelleFictionalCharacterBff === "Sherlock") {
-  alert('Bingo, super sleuth! The game is afoot!')
-}
-else if (michelleFictionalCharacterBff === "Benedict Cumberbatch") {
-  alert("Eh, close enough! We'll mark that as right!")
-}
-else if (michelleFictionalCharacterBff === 'Mr. Darcy') {
-  alert('Uhhhh no. He\'s way too whiny!')
-}
-else if (michelleFictionalCharacterBff === 'Buffy' || michelleFictionalCharacterBff === 'Batman' || michelleFictionalCharacterBff === 'Superman') {
-  alert('Those are pretty popular characters, but nope! The answer was Sherlock Holmes!')
-} else {
-  alert('Good guess! But the answer was Sherlock Holmes. Sherlock...it\'s pretty close to Scharlock, right?')
+var guessCounter = 0;
+console.log('guessCounter: ', guessCounter);
+
+while (guessCounter <= 6) {
+  for (var i=0; i < ficCharas.length; i++) {
+    console.log('current guess: ', michelleFictionalCharacterBff);
+
+    if (michelleFictionalCharacterBff === ficCharas[i]) {
+      alert('Yay! You guessed right! All of the possible answers were: ' + ficCharas[i]);
+      flag = true;
+      break;
+    }
+    else if (!flag) {
+      alert('No guess again!');
+      guessCounter++;
+
+    }
+  }
 }
 
 //Guess a number
@@ -94,33 +120,13 @@ while (myNumber !== 12) {
     alert ('You\'re getting closer...');
     counter++;
   } else if (myNumber === 12) {
-    alert('Yay, you win!')
+    alert('Yay, you win!');
   }
 
   if (counter === 4) {
-    alert('Sorry, you ran out of tries - my favorite number is 12!')
+    alert('Sorry, you ran out of tries - my favorite number is 12!');
     break;
   }
-};
+}
 
 console.log('counter: ', counter);
-
-
-
-
-
-
-
-
-
-//Alternative question
-// var michelleVacation = prompt('Ok, one last question. Where did Michelle go on vacation last?');
-// console.log('michelleVacation: ', michelleVacation);
-
-// if (michelleVacation === "Disneyworld") {
-//   console.log('Correct! My first trip to Disneyworld was a blast!')
-// }
-// else {
-//   console.log('Nope! You\'ll have to ask me in person to find out!');
-// }
-// }
