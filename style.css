@@ -28,8 +28,22 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  font-size: 20px;
+  font-family: 'Averia Serif Libre', cursive;
+  background-color: #9AE2FD;
+}
+
+h4 {
+   font-size: 20px;
+   font-family: 'Averia Serif Libre'
+   background-color: #cc97e5;
+}
+
 .blue {
-  background color: #FFF;
+  background color: blue;
+  font-size: 20px;
+  font-family: 'Averia Serif Libre', cursive;
 }
 
 p {
@@ -44,4 +58,8 @@ body {
 
 footer {
   background-color: #bae1ff;
+}
+
+ol {
+  background-color: red;
 }
