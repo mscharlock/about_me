@@ -130,7 +130,7 @@ var numberGuess = function() {
 
   while (myNumber !== 12 && counter < 4) {
     myNumber = parseInt(prompt('What is my favorite number? Take a guess!'));
-
+    console.log(myNumber);
     if (myNumber >=13){
       alert('Too high!');
       counter++;
@@ -139,7 +139,7 @@ var numberGuess = function() {
       alert('Too low!');
       counter++;
       console.log('counter' + counter);
-    } else if (myNumber === NaN || myNumber === null) {
+    } else if (isNaN(myNumber)) {
       alert ('Enter a number please...');
       counter++;
       console.log('counter' + counter);
@@ -147,7 +147,7 @@ var numberGuess = function() {
       alert('Yay, you win!');
       console.log('counter' + counter);
       // return myNumber;
-    } else if (counter >= 4) {
+    } else if (counter > 4) {
       alert('Sorry, you ran out of tries - my favorite number is 12!');
       return myNumber;
     }
