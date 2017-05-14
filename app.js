@@ -126,13 +126,9 @@ var numberGuess = function() {
     } else if (myNumber === 12) {
       alert('Yay, you win!');
       console.log('counter' + counter);
-      // return myNumber;
     } else if (counter > 4) {
       alert('Sorry, you ran out of tries - my favorite number is 12!');
-      return myNumber;
+      break;
     }
   }
 }
-
-console.log('counter: ', counter);
-numberGuess();
