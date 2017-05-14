@@ -5,6 +5,8 @@ console.log('user: ',user);
 
 alert('Nice to meet you, ' + user +'. To get to know me better, let\'s play a game. I\'ll ask you five questions about me.');
 
+//Five questions about me
+//Q1
 var birthPlace = function() {
   var michelleBorn = prompt('Was I born in the USA? Answer with y/n, please.').toLowerCase();
   console.log('michelleBorn: ',michelleBorn);
@@ -20,6 +22,7 @@ var birthPlace = function() {
 }
 birthPlace();
 
+//Q2
 var college = function(){
   var michelleCollege = prompt('Did Michelle go to Montreal, to McGill University, for her undergraduate degree?').toLowerCase();
   console.log('michelleCollege: ', michelleCollege);
@@ -33,6 +36,7 @@ var college = function(){
 }
 college();
 
+//Q3
 var coding = function() {
   var michelleLikesCoding = prompt('Do you think Michelle enjoys coding?').toLowerCase();
   console.log('michelleLikesCoding: ', michelleLikesCoding);
@@ -47,6 +51,7 @@ var coding = function() {
 }
 coding();
 
+//Q4
 var pets = function() {
   var michelleHasPets = prompt ('Do you think Michelle has any pets?').toLowerCase();
   console.log('michelleHasPets: ', michelleHasPets);
@@ -64,6 +69,7 @@ var pets = function() {
 }
 pets();
 
+//Q5
 var whoWantsToLiveForever = function() {
 var michelleImmortality = prompt('If Michelle could choose to be immortal, would she do it?').toUpperCase();
 console.log('michelleImmortality: ' , michelleImmortality);
@@ -79,49 +85,23 @@ return michelleImmortality;
 }
 whoWantsToLiveForever();
 
-// var michelleFictionalCharacterBff = prompt('Time for one last question! If Michelle could be best friends with any fictional character, who would she choose to befriend?');
-// console.log('michelleFictionalCharacterBff: ', michelleFictionalCharacterBff);
-//
-// if (michelleFictionalCharacterBff === "Sherlock Holmes" || michelleFictionalCharacterBff === "Sherlock") {
-//   alert('Bingo, super sleuth! The game is afoot!')
-// }
-// else if (michelleFictionalCharacterBff === "Benedict Cumberbatch") {
-//   alert("Eh, close enough! We'll mark that as right!")
-// }
-// else if (michelleFictionalCharacterBff === 'Mr. Darcy') {
-//   alert('Uhhhh no. He\'s way too whiny!')
-// }
-// else if (michelleFictionalCharacterBff === 'Buffy' || michelleFictionalCharacterBff === 'Batman' || michelleFictionalCharacterBff === 'Superman') {
-//   alert('Those are pretty popular characters, but nope! The answer was Sherlock Holmes!')
-// } else {
-//   alert('Good guess! But the answer was Sherlock Holmes. Sherlock...it\'s pretty close to Scharlock, right?')
-// }
-
 //Six tries to guess one of multiple answers
-// var ficCharas = ['Sherlock Holmes', 'Catwoman', 'Fluttershy', 'Xena'];
-// var flag;
-// var michelleFictionalCharacterBff = prompt('What fictional character would Michelle hang out with?');
-// console.log('michelleFictionalCharacterBff: ', michelleFictionalCharacterBff);
-//
-// var guessCounter = 0;
-// console.log('guessCounter: ', guessCounter);
-//
-// while (guessCounter <= 6) {
-//   for (var i=0; i < ficCharas.length; i++) {
-//     console.log('current guess: ', michelleFictionalCharacterBff);
-//
-//     if (michelleFictionalCharacterBff === ficCharas[i]) {
-//       alert('Yay! You guessed right! All of the possible answers were: ' + ficCharas[i]);
-//       flag = true;
-//       break;
-//     }
-//     else if (!flag) {
-//       alert('No guess again!');
-//       guessCounter++;
-//
-//     }
-//   }
-// }
+var ficCharas = ['sherlock holmes', 'sherlock','catwoman', 'fluttershy', 'xena'];
+var flag;
+
+for (i = 0; i <= 5; i++) {
+  var charaGuess = prompt('What fictional character would Michelle hang out with?').toLowerCase;
+  if (charaGuess === ficCharas[i]) {
+    alert('Yes indeed! She would definitely hang out with them!');
+    flag = true;
+    break;
+}
+   if (!flag) {
+  alert('Hrmmm...guess again');
+}
+  if (i === 5 && charaGuess != ficCharas[i]) {
+    ('Sorry, the answers were: Sherlock Holmes, Catwoman, Fluttershy, and/or Xena!');
+  }
 
 //Guess a number
 var numberGuess = function() {
@@ -153,27 +133,6 @@ var numberGuess = function() {
     }
   }
 }
+
+console.log('counter: ', counter);
 numberGuess();
-//guessing that stupid fictional chara thing again
-// var flag;
-// //console log
-// var michellesArray = ['Cat', 'Dog'];
-// //console log
-// var guessCount = 0;
-// //console log
-// var yourGuess = prompt('What pet');
-// //console log
-//
-// while (guessCount <= 6) {
-//   while (yourGuess != michellesArray[i]) {
-//     alert('NO');
-//     guessCount++;
-//     console.log(guessCount);
-//
-//     if (yourGuess === michellesArray[i]){
-//       alert('YAY');
-//       guessCount++;
-//       console.log(guessCount);
-//     }
-//   }
-// }
