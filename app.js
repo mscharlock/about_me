@@ -95,13 +95,14 @@ for (i = 0; i <= 5; i++) {
     alert('Yes indeed! She would definitely hang out with them!');
     flag = true;
     break;
-}
-   if (!flag) {
-  alert('Hrmmm...guess again');
-}
+  }
+  if (!flag) {
+    alert('Hrmmm...guess again');
+  }
   if (i === 5 && charaGuess != ficCharas[i]) {
     ('Sorry, the answers were: Sherlock Holmes, Catwoman, Fluttershy, and/or Xena!');
   }
+}
 
 //Guess a number
 var numberGuess = function() {
@@ -126,13 +127,9 @@ var numberGuess = function() {
     } else if (myNumber === 12) {
       alert('Yay, you win!');
       console.log('counter' + counter);
-      // return myNumber;
     } else if (counter > 4) {
       alert('Sorry, you ran out of tries - my favorite number is 12!');
-      return myNumber;
+      break;
     }
   }
 }
-
-console.log('counter: ', counter);
-numberGuess();
