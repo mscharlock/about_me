@@ -1,65 +1,104 @@
 header {
+  padding: 45px;
   font-family: 'Sacramento', cursive;
   font-size: 100px;
   text-shadow: 2px 2px #111;
-  text-align: center;
+  text-align: left;
   color: #FFF;
   background-color: #ffb3ba;
-  margin: 0px;
-  padding: none;
+  position: relative;
+}
+
+nav {
+  height: 50px;
+  width: 100%;
+  position: relative;
+  border: dotted 1px green;
+  font-family: 'Averia Serif Libre', cursive;
+  color: #777;
+  font-size: 25px;
+}
+
+nav > ol > li {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+h1, h2, h3 {
+  font-family: 'Sacramento', cursive;
+  font-size: 50px;
+  font-weight: 200;
+  color: #FFF;
+  text-align: right;
+  padding: 20px;
 }
 
 h1 {
-  font-family: 'Sacramento', cursive;
-  font-size: 50px;
-  font-weight: 200;
-  color: #FFF;
   background-color: #ffdfba;
-  margin: 0px;
-  text-align: center;
+  text-shadow: 2px 2px #FFB070;
 }
 
-h2 {
-  font-family: 'Sacramento', cursive;
-  font-size: 50px;
-  font-weight: 200;
-  color: #FFF;
-  background-color: #baffc9;
-  text-align: center;
+.image {
+  float: left;
+}
+
+.education {
+  background-color: #FFF9B2;
+  text-shadow: 2px 2px #D6C80E;
+}
+
+.skillz {
+  background-color: lime;
+}
+
+.skills {
+  background-color: #ACF9CF;
+}
+
+.experiences {
+  background-color: lightblue;
+}
+
+.experience {
+  background-color: blue;
+}
+
+.employers {
+  background-color: teal;
+}
+
+.quotes {
+  background-color: blue;
 }
 
 h3 {
-  font-size: 20px;
-  font-family: 'Averia Serif Libre', cursive;
-  background-color: #9AE2FD;
+  background-color: #ffdfba;
 }
 
-h4 {
-   font-size: 20px;
-   font-family: 'Averia Serif Libre'
-   background-color: #cc97e5;
+.volunteer {
+  background: rgba(92, 73, 178, 0.5);
+  text-shadow: 2px 2px #5C49B2;
 }
 
-.blue {
-  background color: blue;
-  font-size: 20px;
-  font-family: 'Averia Serif Libre', cursive;
+.volunteerstuff {
+  padding: 10px;
+  text-align: center;
+  background-color: #D0C8F4;
 }
 
-p {
-  font-size: 20px;
-  font-family: 'Averia Serif Libre', cursive;
-}
-
-body {
-  padding: 0px;
-  margin: 0px;
-}
 
 footer {
-  background-color: #bae1ff;
+  color: #fff;
+  background-color: #5C49B2;
+  padding: 30px;
+  text-align: center;
 }
 
-ol {
-  background-color: red;
+footer > a {
+  color: white;
+}
+
+footer > a:hover {
+  color: hotpink;
 }
