@@ -1,3 +1,15 @@
+* {
+  cursor: url('http://www.rw-designer.com/cursor-extern.php?id=22957'), default;
+}
+
+* a:visited {
+  color: #000;
+}
+
+* a:link {
+  color: hotpink;
+}
+
 header {
   padding: 45px;
   font-family: 'Sacramento', cursive;
@@ -9,11 +21,15 @@ header {
   position: relative;
 }
 
+main {
+  font-family: 'Averia Serif Libre', cursive;
+  line-height: 2em;
+}
+
 nav {
   height: 50px;
   width: 100%;
   position: relative;
-  border: dotted 1px green;
   font-family: 'Averia Serif Libre', cursive;
   color: #777;
   font-size: 25px;
@@ -23,53 +39,89 @@ nav > ol > li {
   display: inline-block;
   margin: 0 auto;
   padding: 10px;
-}
+ }
 
 h1, h2, h3 {
   font-family: 'Sacramento', cursive;
   font-size: 50px;
   font-weight: 200;
   color: #FFF;
-  text-align: right;
+  text-align: left;
   padding: 20px;
+  position:
 }
 
 h1 {
-  background-color: #ffdfba;
+  background-color: #fcd683;
   text-shadow: 2px 2px #FFB070;
 }
 
 .image {
-  float: left;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  float: right;
+  border-radius: 100%;
+  z-index: 99;
+  padding: 5px;
+
+}
+
+.image:hover {
+  box-shadow: 0px 0px 100px #fff;
+}
+main > p {
+  background-color:  #fce2a9;
+  padding: 20px;
 }
 
 .education {
-  background-color: #FFF9B2;
-  text-shadow: 2px 2px #D6C80E;
+  background-color: RGBA(255, 250, 85, 0.8);
+  text-shadow: 2px 2px #494608;
+}
+
+.places {
+  background-color: #FFFBA0;
+}
+
+* > li {
+  padding: 10px;
+  text-indent: 10px;
+}
+
+.skills li:before {
+  content: "❤ ";
+  padding: 10px;
+  text-indent: 10px;
 }
 
 .skillz {
-  background-color: lime;
+  background-color: #a3e27f;
 }
 
 .skills {
-  background-color: #ACF9CF;
+  background-color: RGBA(163,226,127,0.5);
+  padding: 20px;
 }
 
 .experiences {
-  background-color: lightblue;
+  background:rgba(62,201,167,0.7);
+  text-shadow: 2px 2px RGBA(62,201,167,1);
 }
 
 .experience {
-  background-color: blue;
+  background:rgba(110, 195,249,0.5);
+  padding: 20px;
 }
 
 .employers {
-  background-color: teal;
+  background-color: #89DDFF;
+  text-shadow: 2px 2px #6EC3D8;
 }
 
 .quotes {
-  background-color: blue;
+  background-color: rgba(137, 221, 255, 0.78);
+  padding: 30px;
 }
 
 h3 {
@@ -77,7 +129,7 @@ h3 {
 }
 
 .volunteer {
-  background: rgba(92, 73, 178, 0.5);
+  background: RGBA(92, 73, 178, 0.69);
   text-shadow: 2px 2px #5C49B2;
 }
 
@@ -87,6 +139,11 @@ h3 {
   background-color: #D0C8F4;
 }
 
+.volunteerstuff li:before {
+  content: "❤ ";
+  padding: 10px;
+  text-indent: 10px;
+}
 
 footer {
   color: #fff;
