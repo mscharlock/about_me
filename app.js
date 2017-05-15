@@ -95,13 +95,14 @@ for (i = 0; i <= 5; i++) {
     alert('Yes indeed! She would definitely hang out with them!');
     flag = true;
     break;
-}
-   if (!flag) {
-  alert('Hrmmm...guess again');
-}
+  }
+  if (!flag) {
+    alert('Hrmmm...guess again');
+  }
   if (i === 5 && charaGuess != ficCharas[i]) {
     ('Sorry, the answers were: Sherlock Holmes, Catwoman, Fluttershy, and/or Xena!');
   }
+}
 
 //Guess a number
 var numberGuess = function() {
